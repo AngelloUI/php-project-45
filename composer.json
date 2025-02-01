@@ -15,5 +15,7 @@
     ],
     "description": "hexlet project1",
     "license": "MIT",
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.1"
+    }
 }
