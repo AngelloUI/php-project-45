@@ -11,11 +11,11 @@ use function cli\prompt;
 
 function getGreeting($name): string
 {
-    return sprintf("Hello, {$name}!");
+    return "Hello, {$name}!";
 }
 function showGreeting(): void
 {
-    line('Welcome to the Brain Game!');
+    line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line(getGreeting($name));
 }
