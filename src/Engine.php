@@ -58,7 +58,10 @@ function askQuestion($question): void
 
 function enterUserAnswer(): string|int
 {
-    return prompt('Your answer');
+    echo 'Your answer: ';
+    $handle = fopen ("php://stdin","r");
+    $answer = trim(fgets($handle));
+    return $answer === '' ? '' : $answer;
 }
 
 function makeComparison(string|int $userAnswer, string|int $answer, string $userName, int &$scores, bool &$isRightAnswer): void
