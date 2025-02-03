@@ -16,7 +16,7 @@ function isPrime(int $number): bool
             return false;
         }
     }
-	return true;
+    return true;
 }
 function gamePrime(): void
 {

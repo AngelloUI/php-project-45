@@ -22,7 +22,7 @@ function gameProgression(): void
         $sequence = range($a1, $an, $d);
         $answer = $sequence[$missingIndexOfElement];
         $sequence[$missingIndexOfElement] = "..";
-        $sequence = implode(" " , $sequence);
+        $sequence = implode(" ", $sequence);
         askQuestion("Question: $sequence");
         $userAnswer = (int)enterUserAnswer();
         makeComparison($userAnswer, $answer, $userName, $scores, $isRightAnswer);
