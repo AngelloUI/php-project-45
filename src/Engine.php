@@ -12,9 +12,9 @@ function getGreeting($name): string
     return "Hello, {$name}!";
 }
 
-function showGreeting(string &$name): void
+function showGreeting(string &$name = ""): void
 {
-    line('Welcome to the Brain Games!');
+    line("\nWelcome to the Brain Games!");
     echo 'May I have your name? ';
     $nameValue = trim(fgets(STDIN));
     setName($name, $nameValue);
