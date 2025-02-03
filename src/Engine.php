@@ -59,7 +59,7 @@ function askQuestion($question): void
 function enterUserAnswer(): string|int
 {
     echo 'Your answer: ';
-    $handle = fopen ("php://stdin","r");
+    $handle = fopen("php://stdin", "r");
     $answer = trim(fgets($handle));
     return $answer === '' ? '' : $answer;
 }
