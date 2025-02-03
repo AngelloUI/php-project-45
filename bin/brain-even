@@ -6,6 +6,7 @@ declare(strict_types=1);
 namespace Bin\BrainEven;
 
 require_once __DIR__ . '/../src/Engine.php';
+
 function gameIsEven(): void
 {
     $userName = '';
@@ -23,4 +24,3 @@ function gameIsEven(): void
 }
 
 gameIsEven();
-
