@@ -8,3 +8,5 @@
 <a href="https://asciinema.org/a/6A4tVzGUp4p9FI4eRPVtujXHq">Demonstration of game brain-calc</a>
 
 <a href="https://asciinema.org/a/ZaHVz9oTzHwZ91MlqlHp1ygvT">Demonstration of game brain-gcd</a>
+
+<a href="https://asciinema.org/a/gYfeI9Pnf0U5AJg4tQ6D34soT">Demonstration of game brain-progression</a>
