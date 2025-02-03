@@ -15,8 +15,8 @@ function gameCalc(): void
     showGreeting($userName);
     showRule("What is the result of the expression?");
     while (($scores !== 3) && $isRightAnswer) {
-        $randomNumber1 = rand(1, 10);
-        $randomNumber2 = rand(1, 10);
+        $randomNumber1 = rand(1, 100);
+        $randomNumber2 = rand(1, 100);
         $randomOperation = $operation[rand(0, 2)];
         askQuestion("Question: $randomNumber1 $randomOperation $randomNumber2");
         $userAnswer = (int)enterUserAnswer();
