@@ -7,7 +7,7 @@ use function cli\prompt;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-function getGreeting($name): string
+function getGreeting(string $name): string
 {
     return "Hello, {$name}!";
 }
@@ -16,7 +16,7 @@ function showGreeting(string &$name = ""): void
 {
     line("\nWelcome to the Brain Games!");
     echo 'May I have your name? ';
-    $nameValue = trim(fgets(STDIN));
+    $nameValue = trim((string)fgets(STDIN));
     setName($name, $nameValue);
     line(getGreeting($nameValue));
 }
@@ -51,16 +51,16 @@ function showUserWin(string $userName): void
     line("Correct!\nCongratulations, $userName!");
 }
 
-function askQuestion($question): void
+function askQuestion(string $question): void
 {
     line($question);
 }
 
-function enterUserAnswer(): string|int
+function enterUserAnswer(): string
 {
     echo 'Your answer: ';
     $handle = fopen("php://stdin", "r");
-    $answer = trim(fgets($handle));
+    $answer = trim((string)fgets($handle));
     return $answer === '' ? '' : $answer;
 }
 
