@@ -8,7 +8,7 @@ require_once __DIR__ . '/../Engine.php';
 
 function isPrime(int $number): bool
 {
-    if ($number < 1) {
+    if ($number <= 1) {
         return false;
     }
     for ($i = 2; $i <= sqrt($number); $i++) {
