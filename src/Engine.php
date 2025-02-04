@@ -60,8 +60,10 @@ function enterUserAnswer(): string
 {
     echo 'Your answer: ';
     $handle = fopen("php://stdin", "r");
-    $answer = trim((string)fgets($handle));
-    return $answer === '' ? '' : $answer;
+    if ($handle === false) {
+        return "";
+    }
+    return trim((string)fgets($handle));
 }
 
 function makeComparison(string|int $userAnswer, string|int $answer, string $userName, int &$scores, bool &$isRightAnswer): void
