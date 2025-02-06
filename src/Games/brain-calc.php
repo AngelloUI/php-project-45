@@ -12,15 +12,16 @@ function gameCalc(): void
     $scores = 0;
     $isRightAnswer = true;
     $operation = ["+", "-", "*"];
+
     showGreeting($userName);
     showRule("What is the result of the expression?");
+
     while (($scores !== 3) && $isRightAnswer) {
         $randomNumber1 = rand(1, 100);
         $randomNumber2 = rand(1, 100);
         $randomOperation = $operation[rand(0, 2)];
-        askQuestion("Question: $randomNumber1 $randomOperation $randomNumber2");
-        $userAnswer = (int)enterUserAnswer();
         $answer = 0;
+
         switch ($randomOperation) {
             case "+":
                 $answer = $randomNumber1 + $randomNumber2;
@@ -32,6 +33,9 @@ function gameCalc(): void
                 $answer = $randomNumber1 * $randomNumber2;
                 break;
         }
+
+        askQuestion("Question: $randomNumber1 $randomOperation $randomNumber2");
+        $userAnswer = (int)enterUserAnswer();
         makeComparison($userAnswer, $answer, $userName, $scores, $isRightAnswer);
     }
 }
