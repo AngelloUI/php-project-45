@@ -28,5 +28,3 @@ function gameIsEven(): void
         makeComparison($userAnswer, $answer, $userName, $scores, $isRightAnswer);
     }
 }
-
-gameIsEven();

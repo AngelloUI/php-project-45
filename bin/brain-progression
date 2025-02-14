@@ -1,4 +1,8 @@
 #!/usr/bin/env php
 <?php
 
+use function Bin\BrainProgression\gameProgression;
+
 require_once __DIR__ . '/../src/Games/brain-progression.php';
+
+gameProgression();

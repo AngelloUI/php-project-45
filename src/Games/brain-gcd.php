@@ -39,5 +39,3 @@ function gameGcd(): void
         makeComparison($userAnswer, $answer, $userName, $scores, $isRightAnswer);
     }
 }
-
-gameGcd();

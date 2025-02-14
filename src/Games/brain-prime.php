@@ -39,5 +39,3 @@ function gamePrime(): void
         makeComparison($userAnswer, $answer, $userName, $scores, $isRightAnswer);
     }
 }
-
-gamePrime();

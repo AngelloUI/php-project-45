@@ -1,4 +1,8 @@
 #!/usr/bin/env php
 <?php
 
+use function Bin\BrainGcd\gamePrime;
+
 require_once __DIR__ . '/../src/Games/brain-prime.php';
+
+gamePrime();

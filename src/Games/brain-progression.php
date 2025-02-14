@@ -32,5 +32,3 @@ function gameProgression(): void
         makeComparison($userAnswer, $answer, $userName, $scores, $isRightAnswer);
     }
 }
-
-gameProgression();

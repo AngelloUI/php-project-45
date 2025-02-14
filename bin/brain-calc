@@ -1,4 +1,8 @@
 #!/usr/bin/env php
 <?php
 
+use function Bin\BrainCalc\gameCalc;
+
 require_once __DIR__ . '/../src/Games/brain-calc.php';
+
+gameCalc();
