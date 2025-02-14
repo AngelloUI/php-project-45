@@ -4,8 +4,12 @@ declare(strict_types=1);
 
 namespace Bin\BrainEven;
 
-require_once __DIR__ . '/../Engine.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
+function isEven(int $number): bool
+{
+    return $number % 2 === 0;
+}
 function gameIsEven(): void
 {
     $userName = '';

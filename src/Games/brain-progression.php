@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Bin\BrainProgression;
 
-require_once __DIR__ . '/../Engine.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 function gameProgression(): void
 {

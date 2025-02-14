@@ -21,10 +21,6 @@ function showGreeting(string &$name = ""): void
     line(getGreeting($nameValue));
 }
 
-function isEven(int $number): bool
-{
-    return $number % 2 === 0;
-}
 
 function setName(string &$name, string $nameValue): void
 {

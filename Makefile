@@ -16,3 +16,5 @@ brain-progression:
 	./bin/brain-progression
 brain-prime:
 	./bin/brain-prime
+update-autoload:
+	composer dump-autoload
