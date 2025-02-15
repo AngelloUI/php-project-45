@@ -21,7 +21,6 @@ function showGreeting(string &$name = ""): void
     line(getGreeting($nameValue));
 }
 
-
 function setName(string &$name, string $nameValue): void
 {
     $name = $nameValue;

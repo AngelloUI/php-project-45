@@ -8,6 +8,7 @@ use function Bin\BrainGcd\gamePrime;
 use function Bin\BrainProgression\gameProgression;
 
 require_once __DIR__ . '/../vendor/autoload.php';
+
 function generateMenu(): void
 {
     echo "choose a game:\n";
@@ -17,6 +18,7 @@ function generateMenu(): void
     echo "4: brain-prime\n";
     echo "5: brain-progression\n";
 }
+
 function play(): void
 {
     generateMenu();

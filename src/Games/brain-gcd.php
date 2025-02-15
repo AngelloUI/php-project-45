@@ -20,6 +20,7 @@ function gcd(int $a, int $b): int
 
     return gcd($a, $b % $a);
 }
+
 function gameGcd(): void
 {
     $userName = '';
