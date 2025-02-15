@@ -1,0 +1,43 @@
+#!/usr/bin/env php
+<?php
+
+use function Bin\BrainCalc\gameCalc;
+use function Bin\BrainEven\gameIsEven;
+use function Bin\BrainGcd\gameGcd;
+use function Bin\BrainGcd\gamePrime;
+use function Bin\BrainProgression\gameProgression;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+function generateMenu(): void
+{
+    echo "choose a game:\n";
+    echo "1: brain-calc\n";
+    echo "2: brain-even\n";
+    echo "3: brain-gcd\n";
+    echo "4: brain-prime\n";
+    echo "5: brain-progression\n";
+}
+function play(): void
+{
+    generateMenu();
+    $answer = enterUserAnswer();
+    switch ($answer) {
+        case 1:
+            gameCalc();
+            break;
+        case 2:
+            gameIsEven();
+            break;
+        case 3:
+            gameGcd();
+            break;
+        case 4:
+            gamePrime();
+            break;
+        case 5:
+            gameProgression();
+            break;
+    }
+}
+
+play();
