@@ -3,6 +3,6 @@
 
 use function Bin\BrainGcd\gameGcd;
 
-require_once __DIR__ . '/../src/Games/brain-gcd.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 gameGcd();

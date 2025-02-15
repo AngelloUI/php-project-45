@@ -3,6 +3,6 @@
 
 use function Bin\BrainGcd\gamePrime;
 
-require_once __DIR__ . '/../src/Games/brain-prime.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 gamePrime();

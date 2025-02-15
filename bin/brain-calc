@@ -3,6 +3,6 @@
 
 use function Bin\BrainCalc\gameCalc;
 
-require_once __DIR__ . '/../src/Games/brain-calc.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 gameCalc();

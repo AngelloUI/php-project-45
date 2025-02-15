@@ -18,3 +18,5 @@ brain-prime:
 	./bin/brain-prime
 update-autoload:
 	composer dump-autoload
+play:
+	./bin/brain-main

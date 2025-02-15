@@ -3,6 +3,6 @@
 
 use function Bin\BrainEven\gameIsEven;
 
-require_once __DIR__ . '/../src/Games/brain-even.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 gameIsEven();
