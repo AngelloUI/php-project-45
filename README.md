@@ -12,3 +12,6 @@
 <a href="https://asciinema.org/a/gYfeI9Pnf0U5AJg4tQ6D34soT">Demonstration of brain-progression game</a>
 
 <a href="https://asciinema.org/a/pGyJMsewipZqJAluOgAhrOLRc">Demonstration of brain-prime game</a>
+
+Запуск основного скрипта:<br>
+docker-compose run php php bin/brain-main
